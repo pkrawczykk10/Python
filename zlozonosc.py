@@ -1,0 +1,32 @@
+import time
+# def lin_search(lst, val):
+#     for i in range (len(lst)):
+#         if lst[i]==val:
+#             return i
+
+# lst=[1,2,3,4,5,6,7,8,9,10]
+# start=time.time()
+# print(lin_search(lst,9))
+# end=time.time()
+
+
+# n=int(input("Podaj liczbe calkowita:"))
+# start=time.time()
+# suma=0
+# i=1
+# while i<=n:
+#     suma+=i
+#     i+=1
+# print(suma)
+# end=time.time()
+# print(end - start)
+
+
+n=int(input("Podaj liczbe calkowita:"))
+start=time.time()
+for i in range(n):
+    for j in range(n):
+        print("#", end='')
+    print()
+end=time.time()
+print(end-start)
