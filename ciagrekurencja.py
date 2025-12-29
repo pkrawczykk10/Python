@@ -8,6 +8,7 @@ def ciagrekurencja():
 
     n = int(input("Podaj numer elementu ciagu: "))
     print(fib(n))
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     ciagrekurencja()
