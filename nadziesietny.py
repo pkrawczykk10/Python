@@ -19,6 +19,8 @@ def nadziesietny():
         print("Liczba dziesietna to:", dziesietna)
     else:
         print("To nie jest poprawna liczba binarna")
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
+    nadziesietny()
     nadziesietny()
