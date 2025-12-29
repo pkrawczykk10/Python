@@ -6,6 +6,7 @@ def odwrocony():
         odwrocony=i+odwrocony
 
     print(f"{odwrocony}")
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     odwrocony()
