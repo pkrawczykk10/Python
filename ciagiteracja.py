@@ -1,12 +1,16 @@
-def silniaiteracja():
-    liczba=int(input("Podaj liczbe calkowita nieujemna:"))
-    if liczba<=0:
-        print("Silnia nie jest zdefiniowana dla liczb ujemnych.")
-    else:
-        silnia = 1
-        for i in range(1, liczba + 1):
-            silnia = silnia * i
-        print(f"{liczba}! = {silnia}")
-
-if __name__=='__main__':
-    silniaiteracja()
+def ciagiteracja():
+    n = int(input("Ile wyrazów? "))
+    
+    a = 0
+    b = 1
+    
+    for i in range(n):
+        print(a)
+        c = a + b
+        a = b
+        b = c
+        
+    input("Nacisnij ENTER aby wrocic do menu")
+        
+if __name__ == "__main__":
+    ciagiteracja()
