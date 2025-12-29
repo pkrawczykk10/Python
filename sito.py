@@ -12,6 +12,8 @@ def sito():
     for i in range(2, n + 1):
         if pierwsze[i]:
             print(i, end=" ")
+            
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     sito()
