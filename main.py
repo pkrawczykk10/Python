@@ -11,58 +11,50 @@ import porownywanie
 import odwrocony
 import wystapienie
 
-def main():
-    while True:
-        print("=== BIBLIOTEKA PROGRAMÓW W PYTHONIE ===")
-        print("11 - Sito Eratostenesa")
-        print("10 - Generowanie wyrazow ciagu Fibonacciego iteracyjnie")
-        print("9 - Generowanie wyrazow ciagu Fibonacciego rekurencyjnie")
-        print("8 - Obliczanie silni iteracyjnie")
-        print("7 - Obliczanie silni rekurencyjnie")
-        print("6 - Rozklad na czynniki pierwsze")
-        print("5 - Zamiana liczby dziesietnej na binarna")
-        print("4 - Zamiana liczby binarnej na dziesietna")
-        print("3 - Szukanie najmniejszego elementu w liscie")
-        print("2 - Porownywanie tekstow")
-        print("1 - Odwracanie kolejnosci liter w podanym wyrazie")
-        print("0 - Zliczanie wystapien podanego znaku w tekscie")
-
-        try:
-            wybor = int(input("Wybierz opcje: "))
-        except ValueError:
-            print("Podaj poprawny numer!")
-            continue
-
-        if wybor == 11:
-           sito.sito()
-        elif wybor == 10:
-            ciagiteracja.ciagiteracja()
-        elif wybor == 9:
-            ciagrekurencja.ciagrekurencja()
-        elif wybor == 8:
-            silniaiteracja.silniaiteracja()
-        elif wybor == 7:
-            silniarekurencja.silniarekurencja()
-        elif wybor ==6:
-            rozklad.rozklad()
-        elif wybor ==5:
-            nabinarny.nabinarny()
-        elif wybor == 4:
-            nadziesietny.nadziesietny()
-        elif wybor == 3:
-            najmniejszy.najmniejszy()
-        elif wybor ==2:
-            porownywanie.porownywanie()
-        elif wybor ==1:
-            odwrocony.odwrocony()
-        elif wybor ==0:
-            wystapienie.wystapienie()
+while True:
+    print("\nMENU")
+    print("1. Sito Eratostenesa")
+    print("2. Fibonacci iteracyjnie")
+    print("3. Fibonacci rekurencyjnie")
+    print("4. Silnia iteracyjnie")
+    print("5. Silnia rekurencyjnie")
+    print("6. Rozkład na czynniki pierwsze")
+    print("7. Dziesiętna na binarną")
+    print("8. Binarna na dziesiętną")
+    print("9. Najmniejszy element w liscie")
+    print("10. Porównywanie tekstów")
+    print("11. Odwracanie wyrazu")
+    print("12. Zliczanie znaku")
+    print("0. Wyjście")
     
-            
-            print("Koniec programu. Do zobaczenia!")
-            break
-        else:
-            print("Nie ma takiej opcji!")
+    wybor = input("Wybierz opcję: ")
 
-if __name__ == "__main_.":
-    main()
+    if wybor == "1":
+        sito.sito()
+    elif wybor == "2":
+        ciagiteracja.ciagiteracja()
+    elif wybor == "3":
+        ciagrekurencja.ciagrekurencja()
+    elif wybor == "4":
+        silniaiteracja.silniaiteracja()
+    elif wybor == "5":
+        silniarekurencja.silniarekurencja()
+    elif wybor == "6":
+        rozklad.rozklad()
+    elif wybor == "7":
+        nabinarny.nabinarny()
+    elif wybor == "8":
+        nadziesietny.nadziesietny()
+    elif wybor == "9":
+        najmniejszy.najmniejszy()
+    elif wybor == "10":
+        porownywanie.porownywanie()
+    elif wybor == "11":
+        odwrocony.odwrocony()
+    elif wybor == "12":
+        wystapienie.wystapienie()
+    elif wybor == "0":
+        print("Koniec")
+        break
+    else:
+        print("Zły wybór")
