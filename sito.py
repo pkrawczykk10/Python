@@ -1,26 +1,17 @@
 def sito():
-    def sitoEratostenesa(n):
-        if n<2:
-            return[]
-        
-        sito=[True]*(n+1)
+    n = int(input("Podaj n: "))
+    pierwsze = [True] * (n + 1)
+    pierwsze[0] = pierwsze[1] = False
 
-        sito[0], sito[1]=False, False
-        
-        for i in range (2, n+1):
-            if sito[i]: #to znaczy ze sprawdzamy czy to jest prawdziwe
-                j=i+i
-                while j<=n:
-                    sito[j]=False
-                    j+=i
-        
-        return sito
+    for i in range(2, int(n ** 0.5) + 1):
+        if pierwsze[i]:
+            for j in range(i * i, n + 1, i):
+                pierwsze[j] = False
 
-    sito=sitoEratostenesa(483920)
-
-    for i in range(len(sito)):
-        if sito[i]:
-            print(i)
+    print("Liczby pierwsze:")
+    for i in range(2, n + 1):
+        if pierwsze[i]:
+            print(i, end=" ")
 
 if __name__=='__main__':
     sito()
