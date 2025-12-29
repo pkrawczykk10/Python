@@ -1,4 +1,3 @@
-
 def ciagiteracja():
     n = int(input("Podaj ile elementów ciągu Fibonacciego: "))
 
@@ -8,6 +7,6 @@ def ciagiteracja():
     for i in range(n):
         print(a)
         a, b = b, a + b
-
-if __name__=='__main__':
+        
+if __name__ == "__main__":
     ciagiteracja()
