@@ -9,3 +9,7 @@ def wystapienie():
             licznik+=1
 
     print(f"Litera '{litera}' wystepuje {licznik} razy.")
+    input("Nacisnij ENTER aby wrocic do menu")
+    
+if __name__=="__main__":
+    wystapienie()
