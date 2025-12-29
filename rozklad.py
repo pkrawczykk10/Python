@@ -10,6 +10,7 @@ def rozklad():
             dzielnik=dzielnik+1
 
     print(f"Rozklad tej liczby na czynniki pierwsze to:{czynniki}")
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     rozklad()
