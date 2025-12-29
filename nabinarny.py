@@ -1,16 +1,15 @@
 def nabinarny():
-    x=int(input("Podaj liczbe:"))
-    reszty=[]
+    liczba = int(input("Podaj liczbę dziesiętną: "))
 
-    while x>0:
-        if x%2==1:
-            x=(x-1)/2 
-        reszty.append(1)
-    else:
-        x=x/2
-        reszty.append(0)
+    wynik = ""
 
-    print(reszty[::-1])
+    while liczba > 0:
+        reszta = liczba % 2
+        wynik = str(reszta) + wynik
+        liczba = liczba // 2
+
+    print("Liczba w systemie binarnym:", wynik)
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     nabinarny()
