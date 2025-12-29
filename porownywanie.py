@@ -6,6 +6,8 @@ def porownywanie():
         print("Teksty sa takie same")
     else:
         print("Teksty sa rozne")
+        
+    input("Nacisnij ENTER aby wrocic do menu")
 
 if __name__=='__main__':
     porownywanie()
