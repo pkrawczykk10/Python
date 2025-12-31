@@ -12,7 +12,7 @@ import odwrocony
 import wystapienie
 
 while True:
-    print("\nMENU")
+    print("MENU")
     print("1. Sito Eratostenesa")
     print("2. Fibonacci iteracyjnie")
     print("3. Fibonacci rekurencyjnie")
